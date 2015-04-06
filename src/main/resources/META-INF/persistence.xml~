@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="cipresLegacyPU" transaction-type="JTA">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>java:/jdbc/cipresLegacyDS</jta-data-source>
+    <class>ar.com.zir.cipres.legacy.api.security.Usuario</class>
+    <class>ar.com.zir.cipres.legacy.api.security.Usuariopassword</class>
+    <class>ar.com.zir.cipres.legacy.api.security.Sector</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoIibb</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.AlumbradoPublico</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ParTelefonico</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoPrefijo</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ConsTelefMovil</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TarifaTelefMovil</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ConceptoImpresion</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Ejido</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Frecuencia</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Barrio</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Provincia</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoIva</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.CajaTelefonica</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Modulocodigo</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TarifaTelefHist</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.CableTelefonico</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoVenta</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.DatosImgFacturado</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Calle</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TarifaTelefonia</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Catastro</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Prestacion</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ItemsAVender</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Cuenta</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.PlanCuentas</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoImpresion</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Familias</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Distrito</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Pais</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.PrefijoTelefonico</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Facturacion</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.PrestTelefonia</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Tipomodulocodigo</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoDirecAdm</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoFactuTelef</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Cliente</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Localidad</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.NumeroAbonado</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Clave</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.CentralTelefonia</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Servicio</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoVto</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Producto</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoDia</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ConexionTelefonica</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="hibernate.archive.autodetection" value="class"/>
+      <property name="hibernate.format_sql" value="false"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.hbm2ddl.auto" value="none"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2012Dialect"/>
+      <!--property name="wildfly.jpa.default-unit" value="false"/-->
+      <!--property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.password" value="Martin77"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://192.168.122.1:3306/milonga"/-->
+    </properties>
+  </persistence-unit>
+</persistence>
