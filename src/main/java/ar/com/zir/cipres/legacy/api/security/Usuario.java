@@ -5,9 +5,11 @@
  */
 package ar.com.zir.cipres.legacy.api.security;
 
+import ar.com.zir.cipres.legacy.api.cuenta.CierreGeneral;
+import ar.com.zir.cipres.legacy.api.cuenta.CierreOperador;
 import ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ConsTelefMovil;
-import ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.DatosImgFacturado;
-import ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Facturacion;
+import ar.com.zir.cipres.legacy.api.impresion.DatosImgFacturado;
+import ar.com.zir.cipres.legacy.api.facturacion.Facturacion;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
@@ -25,6 +27,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -51,6 +54,15 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Usuario.findByCantgracelogins", query = "SELECT u FROM Usuario u WHERE u.cantgracelogins = :cantgracelogins"),
     @NamedQuery(name = "Usuario.findBySysuserid", query = "SELECT u FROM Usuario u WHERE u.sysuserid = :sysuserid")})
 public class Usuario implements Serializable {
+    @Size(max = 60)
+    @Column(name = "Nro_cospel")
+    private String nrocospel;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "idusuario")
+    private Collection<CierreOperador> cierreOperadorCollection;
+    @OneToMany(mappedBy = "idusuario")
+    private Collection<CierreGeneral> cierreGeneralCollection;
+    @OneToMany(mappedBy = "idusuariocontrol")
+    private Collection<CierreGeneral> cierreGeneralCollection1;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idusuario")
     private Collection<ConsTelefMovil> consTelefMovilCollection;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idusuario")
@@ -289,6 +301,41 @@ public class Usuario implements Serializable {
 
     public void setDatosImgFacturadoCollection(Collection<DatosImgFacturado> datosImgFacturadoCollection) {
         this.datosImgFacturadoCollection = datosImgFacturadoCollection;
+    }
+
+    public String getNrocospel() {
+        return nrocospel;
+    }
+
+    public void setNrocospel(String nrocospel) {
+        this.nrocospel = nrocospel;
+    }
+
+    @XmlTransient
+    public Collection<CierreOperador> getCierreOperadorCollection() {
+        return cierreOperadorCollection;
+    }
+
+    public void setCierreOperadorCollection(Collection<CierreOperador> cierreOperadorCollection) {
+        this.cierreOperadorCollection = cierreOperadorCollection;
+    }
+
+    @XmlTransient
+    public Collection<CierreGeneral> getCierreGeneralCollection() {
+        return cierreGeneralCollection;
+    }
+
+    public void setCierreGeneralCollection(Collection<CierreGeneral> cierreGeneralCollection) {
+        this.cierreGeneralCollection = cierreGeneralCollection;
+    }
+
+    @XmlTransient
+    public Collection<CierreGeneral> getCierreGeneralCollection1() {
+        return cierreGeneralCollection1;
+    }
+
+    public void setCierreGeneralCollection1(Collection<CierreGeneral> cierreGeneralCollection1) {
+        this.cierreGeneralCollection1 = cierreGeneralCollection1;
     }
     
 }

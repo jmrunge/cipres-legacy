@@ -5,6 +5,7 @@
  */
 package ar.com.zir.cipres.legacy.api.servicios.telefoniacelular;
 
+import ar.com.zir.cipres.legacy.api.cuenta.ItemsAVender;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.Basic;

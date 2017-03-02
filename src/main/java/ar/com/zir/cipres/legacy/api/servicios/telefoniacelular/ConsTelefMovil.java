@@ -5,6 +5,7 @@
  */
 package ar.com.zir.cipres.legacy.api.servicios.telefoniacelular;
 
+import ar.com.zir.cipres.legacy.api.facturacion.Facturacion;
 import ar.com.zir.cipres.legacy.api.security.Usuario;
 import java.io.Serializable;
 import java.math.BigDecimal;

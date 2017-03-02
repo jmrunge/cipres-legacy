@@ -6,51 +6,53 @@
     <class>ar.com.zir.cipres.legacy.api.security.Usuario</class>
     <class>ar.com.zir.cipres.legacy.api.security.Usuariopassword</class>
     <class>ar.com.zir.cipres.legacy.api.security.Sector</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoIibb</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.AlumbradoPublico</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ParTelefonico</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoPrefijo</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ConsTelefMovil</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TarifaTelefMovil</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ConceptoImpresion</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Ejido</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Frecuencia</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Barrio</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Provincia</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoIva</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.CajaTelefonica</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Modulocodigo</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TarifaTelefHist</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.CableTelefonico</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoVenta</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.DatosImgFacturado</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Calle</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TarifaTelefonia</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Catastro</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Prestacion</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ItemsAVender</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Cuenta</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.PlanCuentas</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoImpresion</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Familias</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Distrito</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Pais</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.PrefijoTelefonico</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Facturacion</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.PrestTelefonia</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Tipomodulocodigo</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoDirecAdm</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoFactuTelef</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Cliente</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Localidad</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.NumeroAbonado</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Clave</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.CentralTelefonia</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Servicio</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.GrupoVto</class>
-    <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.Producto</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.TipoDia</class>
     <class>ar.com.zir.cipres.legacy.api.servicios.telefoniacelular.ConexionTelefonica</class>
+    <class>ar.com.zir.cipres.legacy.api.domicilio.Barrio</class>
+    <class>ar.com.zir.cipres.legacy.api.domicilio.Calle</class>
+    <class>ar.com.zir.cipres.legacy.api.domicilio.Catastro</class>
+    <class>ar.com.zir.cipres.legacy.api.cliente.Cliente</class>
+    <class>ar.com.zir.cipres.legacy.api.impresion.ConceptoImpresion</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.Cuenta</class>
+    <class>ar.com.zir.cipres.legacy.api.impresion.DatosImgFacturado</class>
+    <class>ar.com.zir.cipres.legacy.api.domicilio.Ejido</class>
+    <class>ar.com.zir.cipres.legacy.api.facturacion.Facturacion</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.Familias</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.Frecuencia</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.GrupoDirecAdm</class>
+    <class>ar.com.zir.cipres.legacy.api.impresion.GrupoImpresion</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.GrupoVenta</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.GrupoVto</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.ItemsAVender</class>
+    <class>ar.com.zir.cipres.legacy.api.domicilio.Localidad</class>
+    <class>ar.com.zir.cipres.legacy.api.domicilio.Pais</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.PlanCuentas</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.Prestacion</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.Producto</class>
+    <class>ar.com.zir.cipres.legacy.api.domicilio.Provincia</class>
+    <class>ar.com.zir.cipres.legacy.api.servicios.Servicio</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.TipoIibb</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.TipoIva</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.CierreGeneral</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.CierreOperador</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.Comprobante</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.PuntoVta</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.TipoCompNumeracion</class>
+    <class>ar.com.zir.cipres.legacy.api.cuenta.TipoComprobanteLegacy</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="hibernate.archive.autodetection" value="class"/>

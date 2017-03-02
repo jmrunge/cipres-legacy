@@ -5,6 +5,7 @@
  */
 package ar.com.zir.cipres.legacy.api.servicios.telefoniacelular;
 
+import ar.com.zir.cipres.legacy.api.domicilio.Catastro;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
